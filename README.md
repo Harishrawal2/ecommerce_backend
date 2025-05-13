@@ -33,11 +33,13 @@ A complete e-commerce backend API built with TypeScript, Node.js, Express.js, Pr
 1. Clone the repository
 
 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 3. Create a `.env` file based on `.env.example` with your configuration:
+
 ```
 DATABASE_URL="mongodb+srv://username:password@cluster.mongodb.net/ecommerce?retryWrites=true&w=majority"
 JWT_SECRET="your-secret-key-here"
@@ -48,11 +50,13 @@ LOG_LEVEL="debug"
 ```
 
 4. Run Prisma generate to create the client
+
 ```bash
 npx prisma generate
 ```
 
 5. Start the development server
+
 ```bash
 npm run dev
 ```
@@ -122,7 +126,3 @@ npm run dev
 - `GET /api/admin/orders` - Get all orders
 - `GET /api/admin/orders/:id` - Get order by ID
 - `PATCH /api/admin/orders/:id/status` - Update order status
-
-## License
-
-MIT
